@@ -1,0 +1,95 @@
+/* Basic page reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Page layout */
+body {
+  font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif;
+  line-height: 1.5;
+  background: linear-gradient(180deg,#f7f9fc,#eef4ff);
+  color: #222;
+  padding: 24px;
+}
+
+/* Header */
+.site-header {
+  background: #ffffffcc;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.06);
+}
+.name {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+.tagline {
+  margin-top: 8px;
+  color: #334155;
+  font-size: 1rem;
+}
+
+/* Main content */
+.content {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr;
+}
+
+/* Sections */
+section {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.04);
+}
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 18px;
+  margin-top: 8px;
+}
+
+/* Images row */
+.images-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.images-row figure {
+  text-align: center;
+  width: 50%;
+}
+.images-row img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e6eef8;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #475569;
+  padding-top: 8px;
+}
+
+/* Color & font variation demonstrated */
+.name { color: #0b5cff; font-weight: 700; }
+.classes h2, .favorites h2 { color: #0b5cff; font-style: italic; }
+
+/* Responsive tweak */
+@media (min-width: 800px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .mood-images {
+    grid-column: span 2;
+  }
+}
